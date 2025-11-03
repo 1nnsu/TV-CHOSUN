@@ -21,12 +21,101 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+        <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js"></script> 
     </head>
     <body>
-        <main id="smooth-wrapper">
-            <article id="smooth-content">
-                
-            </article>
+        <header>
+            <div class="inner">
+                <div class="header-warp">
+                    <a href="./index.html" class="header-logo header-logo-w"><img src="./img/header/logo-white.png" alt="TV-CHOSUN"></a>
+                    <a href="./index.html" class="header-logo header-logo-b"><img src="./img/header/logo-black.png" alt="TV-CHOSUN"></a>
+                    <nav>
+                        <ul>
+                            <li><a href="#">소개</a></li>
+                            <li><a href="#">프로그램</a></li>
+                            <li><a href="#">연사</a></li>
+                            <li><a href="#">게시판</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="main-visual-sec">
+                <div class="inner">
+                    <div class="main-visual-wrap">
+                        <img src="./img/main/main-visual/main-logo.png" alt="TV-CHOSUN" class="main-Visual-img">
+                        <div class="titleBox">
+                            <div class="t1">TV조선 아카데미</div>
+                            <div class="t2">TV CHOSUN  ACADEMY</div>
+                        </div>
+                        <div class="t3">MZ세대 <b>‘부의 사다리’</b> 만들기 – <b>시즌2</b></div>
+                        <div class="textBox">
+                            <div class="redDiv">
+                                2030을 위한 부의 설계, <b>하루에 담다</b>
+                            </div>
+                            <div class="blackDiv">
+                                2025년 11월 29일(토) <b>10:00 ~ 18:00</b> <br/>
+                                <b class="red">KG타워 하모니 홀</b>
+                            </div>
+                        </div>
+                        <button class="mainBtn">
+                            <img src="./img/main/main-visual/arrow-1.png" alt=">" class="arrow">
+                            <p class="text">신청하기</p>
+                            <img src="./img/main/main-visual/arrow-2.png" alt="<" class="arrow">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="program-sec">
+                <div class="inner">
+                    <div class="t-titleBox">
+                        <div class="t-stick"></div>
+                        <div class="t-title">프로그램</div>
+                    </div>
+                </div>
+            </section>
+            <section class="red-banner-sec">
+                <div class="inner">
+                    
+                </div>
+            </section>
+            <section class="speaker-sec">
+                <div class="inner"></div>
+            </section>
+            <section class="black-banner-sec">
+                <div class="inner"></div>
+            </section>
+            <section class="map-sec">
+                <div class="inner"></div>
+            </section>
         </main>
+        <footer>
+            <div class="inner">
+                <a href="./index.html"><img src="./img/footer/footer-logo.png" alt="TV-CHOSUN" class="f-logo"></a>
+                <ul>
+                    <li><b>회사</b>주식회사 플랜와이즈</li>
+                    <li><b>대표자</b>이승희</li>
+                    <li><b>주소</b>서울시 노원구 공릉로58가길 12 301호</li>
+                    <li><b>제휴문의</b>ksg@planwise.kr</li>
+                    <li><b>사업자등록번호</b>사업자등록번호 531-81-93061</li>
+                </ul>
+                <p class="copyright">© PLANWISE Co., Ltd all rights reserved.</p>
+            </div>
+        </footer>
+        <script>
+
+            const lenis = new Lenis({
+            duration: 2.5,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(10, -10 * t)),
+            });
+
+            function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+            }
+            requestAnimationFrame(raf);
+            
+        </script>
     </body>
 </html>
