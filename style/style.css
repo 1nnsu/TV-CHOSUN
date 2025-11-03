@@ -101,7 +101,14 @@ section.main-visual-sec .main-visual-wrap .mainBtn .text {  }
 section.program-sec { background: url('../img/main/program-sec/common_bg.jpg') no-repeat center / cover; }
 
 /* red-banner-sec */
-section.red-banner-sec { padding: 40px 0; }
+section.red-banner-sec { padding: 40px 0; background: linear-gradient(90deg, #AC161C 0%, #DF1D24 50%, #AC161C 100%); color: var(--white-color); }
+section.red-banner-sec .inner { display: flex; flex-direction: column; gap: 20px; justify-content: center; align-items: center; text-align: center; }
+section.red-banner-sec .redTitleBox { font-size: 24px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; }
+section.red-banner-sec .redTitleBox .bell {  }
+section.red-banner-sec .t1 { font-size: 20px; font-weight: 700; line-height: 180%;  font-family: 'Pretendard', sans-serif; }
+section.red-banner-sec .t2 { font-size: 16px; font-family: 'Pretendard', sans-serif;}
+
+
 /* speaker-sec */
 section.speaker-sec { background: url('../img/main/speaker-sec/') no-repeat center / cover; }
 /* black-banner-sec */
