@@ -18,3 +18,52 @@
     0% { opacity: 0; transform: translate3d(-30px, 0, 0px); }
     100% { opacity: 1; transform: translate3d(0px, 0px, 0px); }
 }
+@keyframes shimmer {
+  0% { opacity: 0.6; }
+  25% { opacity: 0.8; }
+  50% { opacity: 1; }
+  75% { opacity: 0.8; }
+  100% { opacity: 0.6; }
+}
+@keyframes shimmer2 {
+  0% { opacity: 0.6; transform: translateX(-5px); }
+  50% { opacity: 1;transform: translateX(0); }
+  100% { opacity: 0.6; transform: translateX(5px); }
+}
+
+/* 메인 */
+section.main-visual-sec .main-visual-wrap { opacity: 0; }
+section.main-visual-sec.on .main-visual-wrap { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.program-sec .titleDiv { opacity: 0; }
+section.program-sec.on .titleDiv { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+/* section.program-sec .program-img { opacity: 0; }
+section.program-sec.on .program-img { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; } */
+
+section.red-banner-sec .inner { opacity: 0; }
+section.red-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.speaker-sec .t-titleBox { opacity: 0; }
+section.speaker-sec.on .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.speaker-sec .speaker-wrap { opacity: 0; }
+section.speaker-sec.on .speaker-wrap { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.black-banner-sec .inner { opacity: 0; }
+section.black-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.map-sec .mapDiv .t-titleBox { opacity: 0; }
+section.map-sec.on .mapDiv .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.map-sec ul li:nth-child(1) .t-titleBox { opacity: 0; }
+section.map-sec ul.on li:nth-child(1) .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.map-sec ul li .textBox { opacity: 0; }
+section.map-sec ul.on li .textBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.map-sec ul li:nth-child(2) .titleDiv { opacity: 0; }
+section.map-sec ul.on li:nth-child(2) .titleDiv { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.map-sec ul li .contentBox { opacity: 0; }
+section.map-sec ul.on li .contentBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.map-sec .map-logo { animation: shimmer 3s linear infinite; }
+
+.mo-box .table-wrap .touch-slide .icon { animation: shimmer2 1s linear infinite; }
