@@ -123,7 +123,7 @@ header nav ul li .menu2 a:hover > span::after { transform: scale(1); }
 /* 헤더 햄버거 메뉴 */
 header.on .menuBtn span { background: var(--black-color); }
 
-.menuBtn{ width: 33px; aspect-ratio: 1; display: flex; justify-content: center; flex-direction: column; gap: 8px; background: transparent; border: none; }
+.menuBtn{ width: 33px; aspect-ratio: 1; display: flex; justify-content: center; flex-direction: column; gap: 8px; background: transparent; border: none; position: relative; z-index: 100; }
 .menuBtn span{ display: block; height: 2px; background: var(--white-color); transition: opacity .3s, transform .3s; transform-origin: center; }
 
 .menuBtn.on span:nth-child(1){ transform: rotate(45deg) translateX(10px) translateY(8px)}
@@ -598,26 +598,31 @@ section.season-sec .titleDiv .t-titleBox { margin-bottom: 0; }
 
 section.season-sec .tabBox { display: flex; align-items: center; gap: 20px; font-family: 'Pretendard', sans-serif; }
 section.season-sec .tabBox .text { font-size: 18px; }
-section.season-sec .tabBox .seasonDiv {  }
+section.season-sec .tabBox .seasonDiv { position: relative; z-index: 5; }
 section.season-sec .tabBox .seasonDiv .box { position: relative; font-size: 16px;  }
 section.season-sec .tabBox .seasonDiv .box .tabmenu1 { padding: 10px 20px; display: flex; align-items: center; gap: 20px; background: #e4e4e4; background: var(--white-color); box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.10);  }
 section.season-sec .tabBox .seasonDiv .box .tabmenu1 .t1 {  }
 section.season-sec .tabBox .seasonDiv .box .tabmenu1 .s-arrow { transition: transform 100ms; cursor: pointer; }
 section.season-sec .tabBox .seasonDiv .box .tabmenu1 .s-arrow.on { transform: rotate(-180deg); }
-section.season-sec .tabBox .seasonDiv .box .tabmenu2 { opacity: 0; width: 100%; position: absolute; top: 100%r; left: 0; padding: 10px 20px; background: var(--white-color); box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.20); }
+section.season-sec .tabBox .seasonDiv .box .tabmenu2 { opacity: 0; width: 100%; position: absolute; top: 100%; left: 0; padding: 10px 20px; background: var(--white-color); box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.20); }
 section.season-sec .tabBox .seasonDiv .box .tabmenu2.on { opacity: 1; }
 section.season-sec .tabBox .seasonDiv .box .tabmenu2 .t2 {  }
 
 @media screen and (max-width: 1440px) { 
-
+    section.season-sec .tabBox .text { font-size: 16px; }
 }
 
 @media screen and (max-width: 1024px) { 
-
+    section.season-sec .tabBox .text { font-size: 16px; }
 }
 
 @media screen and (max-width: 768px) { 
     section.season-sec { padding: 0 0 10vw; } 
+    section.season-sec .tabBox .text { font-size: 14px; }
+    section.season-sec .tabBox { gap: 10px; }
+    section.season-sec .tabBox .seasonDiv .box .tabmenu1 .t1 { font-size: 12px; }
+    section.season-sec .tabBox .seasonDiv .box .tabmenu2 { font-size: 12px; }
+    section.season-sec .tabBox .seasonDiv .box .tabmenu1 .s-arrow { width: 10px; }
 }
 
 @media screen and (max-width: 480px) { 
