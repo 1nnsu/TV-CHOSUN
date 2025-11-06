@@ -623,9 +623,12 @@ section.season-sec .tabBox .seasonDiv .box .tabmenu2 .t2 {  }
     section.season-sec .tabBox .seasonDiv .box .tabmenu1 .t1 { font-size: 12px; }
     section.season-sec .tabBox .seasonDiv .box .tabmenu2 { font-size: 12px; }
     section.season-sec .tabBox .seasonDiv .box .tabmenu1 .s-arrow { width: 10px; }
+    section.season-sec .tabBox .seasonDiv .box .tabmenu1 { padding: 8px 13px; }
+    section.season-sec .tabBox .seasonDiv .box .tabmenu2 { padding: 8px 13px; }
 }
 
 @media screen and (max-width: 480px) { 
+    section.season-sec .tabBox .text { font-size: 12px; }
 
 }
 
@@ -685,6 +688,7 @@ section.youtube-sec ul li .item .text { margin-top: 10px; font-size: 16px; text-
     .mo-box .table-wrap .touch-slide { display: flex; }
     .mo-box .table-wrap .touch-slide .icon{ animation: smoothBlink 2s ease-in-out infinite; width: 50px; }
     .mo-box .table-wrap .scroll-x .program-img{ width: 900px; max-width: 900px; }
+    .mo-box .table-wrap .scroll-x .season-img{ width: 900px; max-width: 900px; }
     .mo-box .table-wrap .touch-slide .center { font-weight: 400; }
 }
 
