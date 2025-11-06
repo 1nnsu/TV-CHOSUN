@@ -106,7 +106,7 @@ header nav ul li:nth-child(1):hover > a,
 header nav ul li:nth-child(1):focus > a,
 header nav ul li:nth-child(1).on { color: unset; background: unset; }
 
-header .mo-menu { display: none; }
+header .mo-menu { display: none; position: relative; z-index: 101; }
 
 /* 헤더 드롭다운 */
 header .menu1 { padding: 10px 0; border-radius: 10px; }
