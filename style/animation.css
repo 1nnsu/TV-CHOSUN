@@ -43,10 +43,11 @@ section.program-sec.on .mo-box { animation: fadeIn 0.5s ease-in-out 0s 1 forward
 section.red-banner-sec .inner { opacity: 0; }
 section.red-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 
-.main section.speaker-sec .t-titleBox { opacity: 0; }
-.main section.speaker-sec.on .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
-.main section.speaker-sec .speaker-wrap { opacity: 0; }
-.main section.speaker-sec.on .speaker-wrap { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.speaker-sec .t-titleBox { opacity: 0; }
+section.speaker-sec.on .inner .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.speaker-sec .speaker-wrap { opacity: 0; }
+section.speaker-sec.on .inner .speaker-wrap{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+
 
 section.black-banner-sec .inner { opacity: 0; }
 section.black-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
