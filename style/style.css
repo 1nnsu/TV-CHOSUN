@@ -363,13 +363,13 @@ section.black-banner-sec .b-bannerBtn { font-size: 20px; font-weight: 700; width
     section.black-banner-sec { padding: 10vw 0; }
     section.black-banner-sec .black-banner-logo { width: 150px; }
     section.black-banner-sec .text { font-size: 24px; }
-    section.black-banner-sec .b-bannerBtn { font-size: 16px; }
+    section.black-banner-sec .b-bannerBtn {width: 140px; font-size: 14px; }
 }
 
 @media screen and (max-width: 480px) { 
     section.black-banner-sec .black-banner-logo { width: 130px; }
     section.black-banner-sec .text { margin: 10px auto 20px; font-size: 20px; }
-    section.black-banner-sec .b-bannerBtn { width: 150px; }
+    section.black-banner-sec .b-bannerBtn { width: 120px; font-size: 12px; }
 }
 
 /* map-sec */
