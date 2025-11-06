@@ -37,16 +37,16 @@ section.main-visual-sec.on .main-visual-wrap { animation: fadeIn 0.5s ease-in-ou
 
 section.program-sec .titleDiv { opacity: 0; }
 section.program-sec.on .titleDiv { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
-/* section.program-sec .program-img { opacity: 0; }
-section.program-sec.on .program-img { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; } */
+section.program-sec .mo-box { opacity: 0; }
+section.program-sec.on .mo-box { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
 
 section.red-banner-sec .inner { opacity: 0; }
 section.red-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 
-section.speaker-sec .t-titleBox { opacity: 0; }
-section.speaker-sec.on .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
-section.speaker-sec .speaker-wrap { opacity: 0; }
-section.speaker-sec.on .speaker-wrap { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main section.speaker-sec .t-titleBox { opacity: 0; }
+.main section.speaker-sec.on .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.main section.speaker-sec .speaker-wrap { opacity: 0; }
+.main section.speaker-sec.on .speaker-wrap { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 
 section.black-banner-sec .inner { opacity: 0; }
 section.black-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
@@ -63,7 +63,28 @@ section.map-sec ul li:nth-child(2) .titleDiv { opacity: 0; }
 section.map-sec ul.on li:nth-child(2) .titleDiv { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 section.map-sec ul li .contentBox { opacity: 0; }
 section.map-sec ul.on li .contentBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+section.map-sec .mapDiv .locationBox { opacity: 0; }
+section.map-sec.on .mapDiv .locationBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .2s; }
 
 section.map-sec .map-logo { animation: shimmer 3s linear infinite; }
 
 .mo-box .table-wrap .touch-slide .icon { animation: shimmer2 1s linear infinite; }
+
+/* 공통 메인 배너*/
+.sub .common-visual-sec .logo { opacity: 0; }
+.sub .common-visual-sec.on .logo {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+.sub .common-visual-sec .text { opacity: 0; }
+.sub .common-visual-sec.on .text {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
+
+section.intro-sec .intro-logo { opacity: 0; }
+section.intro-sec.on .intro-logo {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .3s;}
+section.intro-sec .introDiv .text { opacity: 0; }
+section.intro-sec.on .introDiv .text {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .4s;}
+section.intro-sec .introDiv .sub1-img { opacity: 0; }
+section.intro-sec.on .introDiv .sub1-img {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .4s;}
+
+section.common-menu-sec ul { opacity: 0; }
+section.common-menu-sec.on ul {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .1s;}
+
+section.season-sec .inner { opacity: 0; }
+section.season-sec.on .inner {animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: .2s;}
