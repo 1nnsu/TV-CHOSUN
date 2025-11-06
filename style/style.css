@@ -252,11 +252,13 @@ section.program-sec .titleDiv .programBtn { width: 180px; font-size: 18px; font-
 }
 
 @media screen and (max-width: 768px) { 
-
+    section.program-sec .titleDiv .programBtn { font-size: 14px; }
+    section.program-sec .titleDiv .programBtn { width: 140px; }
 }
 
 @media screen and (max-width: 480px) { 
-
+    section.program-sec .titleDiv .programBtn { font-size: 12px; }
+    section.program-sec .titleDiv .programBtn { width: 100px; }
 }
 
 /* red-banner-sec */
@@ -670,7 +672,7 @@ section.youtube-sec ul li .item .text { margin-top: 10px; font-size: 16px; text-
 
 
 /* 표 이미지 모바일 */
-.mo-box .table-wrap .touch-slide { display: none; }
+.mo-box .table-wrap .touch-slide { display: none; font-weight: 500; }
 @media screen and (max-width: 1024px) {
     .mo-box .table-wrap{  position: relative;  }
     .mo-box .table-wrap .scroll-x{ overflow-x: scroll; }
@@ -678,6 +680,7 @@ section.youtube-sec ul li .item .text { margin-top: 10px; font-size: 16px; text-
     .mo-box .table-wrap .touch-slide { display: flex; }
     .mo-box .table-wrap .touch-slide .icon{ animation: smoothBlink 2s ease-in-out infinite; width: 50px; }
     .mo-box .table-wrap .scroll-x .program-img{ width: 900px; max-width: 900px; }
+    .mo-box .table-wrap .touch-slide .center { font-weight: 400; }
 }
 
 @media screen and (max-width: 480px) {
