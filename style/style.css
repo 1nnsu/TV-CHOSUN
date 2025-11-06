@@ -257,7 +257,7 @@ section.program-sec .titleDiv .programBtn { width: 180px; font-size: 18px; font-
 }
 
 @media screen and (max-width: 480px) { 
-    section.program-sec .titleDiv .programBtn { font-size: 12px; }
+    section.program-sec .titleDiv .programBtn { padding: 7px 0; font-size: 12px; }
     section.program-sec .titleDiv .programBtn { width: 100px; }
 }
 

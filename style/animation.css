@@ -46,7 +46,7 @@ section.red-banner-sec .inner.on { animation: fadeIn 0.5s ease-in-out 0s 1 forwa
 section.speaker-sec .t-titleBox { opacity: 0; }
 section.speaker-sec.on .inner .t-titleBox { animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; }
 section.speaker-sec .speaker-wrap { opacity: 0; }
-section.speaker-sec.on .inner .speaker-wrap{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running; animation-delay: 0.2s; }
+section.speaker-sec.on .inner .speaker-wrap{ animation: fadeIn 0.5s ease-in-out 0s 1 forwards running;  }
 
 
 section.black-banner-sec .inner { opacity: 0; }
